@@ -27,54 +27,33 @@ template(name="hero_title_container")
 
 //
 template(name="hero_title")
-    h1.header.center.text-lighten-2.cyan-text(name="title" class="{{#if currentUser}}edit{{/if}}")= title
+    h1.header.center.text-lighten-2.cyan-text(name="title")= title
 
 //
 template(name="hero_subtitle_container")
-    if Session 'editingHeroSubTitle'
-        if currentUser
-            +InputHelper(attribute="subTitle" document=this collection="hero"
-            class='form-control' placeholder=subTitle id=this)
-        else
-            +hero_subtitle
-    else
-        +hero_subtitle
+    +hero_subtitle
 
 //
 template(name="hero_subtitle")
-    h5.header.col.s12.white-text(name="subTitle" class="{{#if currentUser}}edit{{/if}}")= subTitle
+    h5.header.col.s12.white-text(name="subTitle")= subTitle
 
 //
 template(name="hero_text_container")
-    if Session 'editingHeroText'
-        if currentUser
-            +InputHelper(attribute="text" document=this collection="hero"
-            class='form-control' placeholder=text id=this)
-        else
-            +hero_text
-    else
-        +hero_text
+    +hero_text
 
 //
 template(name="hero_text")
-    p.white-text(name="text" class="{{#if currentUser}}edit{{/if}}")
+    p.white-text(name="text")
         +markdown
             #{text}
 
 
 //
 template(name="hero_img_container")
-    if Session 'editingHeroImg'
-        if currentUser
-            +InputHelper(attribute="img" document=this collection="hero"
-            class='form-control' placeholder=img id=this)
-        else
-            +hero_img
-    else
-        +hero_img
+    +hero_img
 //
 template(name="hero_img")
-    .parallax.scrollfire.hero(name="img" class="{{#if currentUser}}edit{{/if}}")
+    .parallax.scrollfire.hero(name="img")
         img(src='#{img}', alt='#{alt}')
 
 
