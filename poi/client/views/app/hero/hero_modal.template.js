@@ -1,4 +1,12 @@
 /**/
+Template.hero_modal.events({
+    "submit form": function () {
+        $('#hero_modal').closeModal();
+        // TODO: Or show confirmation
+    }
+});
+
+/* */
 Template.hero_modal_title_container.events({
     "keypress input": App.Template.Session.toggleAfterKeyPress("editingHeroModalTitle"),
     "click .edit": App.Template.Session.setHelper("editingHeroModalTitle", "title", App.Template.Jquery.focus)

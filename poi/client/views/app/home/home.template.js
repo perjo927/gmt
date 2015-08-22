@@ -16,12 +16,5 @@ Template.home.helpers({
         isDev: function () {
                 var checkDev = isDevEnv();
                 return checkDev();
-        },
-        // TODO: Remove after release
-        isUnlocked: function() {
-                var checkDev = isDevEnv();
-                // TODO: User server-side validation for release
-                var isUnlocked = checkDev() || Session.equals("isUnlocked", true);
-                return isUnlocked;
         }
 });

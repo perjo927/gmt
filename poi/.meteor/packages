@@ -19,3 +19,7 @@ accounts-password
 yann:input-helper
 msavin:jetsetter
 erasaur:session-helper
+useraccounts:materialize
+accounts-facebook
+accounts-google
+accounts-twitter

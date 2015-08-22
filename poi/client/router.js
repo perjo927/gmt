@@ -1,15 +1,4 @@
-// TODO: Remove after release
-var validatePin = function (params) {
-    if (params.query.hasOwnProperty("pin")) {
-        var pin = params.query.pin;
 
-        Meteor.call("validatePin", pin, function(err,res){
-            if(!!res) {
-                Session.set("isUnlocked", res);
-            }
-        });
-    }
-};
 
 
 Router.route('/', {
@@ -24,12 +13,8 @@ Router.route('/', {
             "hero": noParams,
             "intro": noParams,
             "videos": noParams,
-            "consultation": noParams,
-            "training": noParams,
-            "experiences": noParams,
             "eventss": noParams,
             "footer": noParams,
-            "sticky": noParams,
             "appointment": noParams
 
         });
@@ -37,7 +22,6 @@ Router.route('/', {
     action: function(){
         var router = this;
         var params = router.params;
-        validatePin(params);
 
         var c = App.collections;
 
@@ -49,11 +33,7 @@ Router.route('/', {
                     hero: c["hero"].find(),
                     intro: c["intro"].find(),
                     videos: c["videos"].find(),
-                    consultation: c["consultation"].find(),
-                    training: c["training"].find(),
-                    experiences: c["experiences"].find(),
                     eventss: c["eventss"].find(),
-                    sticky: c["sticky"].find(),
                     appointment: c["appointment"].find()
                 }
             }

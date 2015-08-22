@@ -20,10 +20,5 @@ Meteor.methods({
             // headers : Object - dictionary of custom headers
         });
         return isEmailSent;
-    },
-    "validatePin": function(pin) {
-        check(pin, String);
-        var answer = Server.Methods.ParseAssets("pin");
-        return (pin === answer);
     }
 });

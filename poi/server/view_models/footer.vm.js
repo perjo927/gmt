@@ -1,28 +1,13 @@
 
 
 var footer = {
-    title:  "About the facilitator",
-    text: "Paul Wong is the founder of the Art of Neutrality (TM), a consciousness " +
-        "program based on over 15 years of experience working with thousands of people globally ... ",
-    img: "img/paul.jpg",
-    alt: "Paul Wong",
-    //link: {
-    //    text: "Read more",
-    //    link: "#readmore_footer_modal",
-    //}
+    title:  "About",
+    text: "Points of Interest is a service provided to you for free",
 
     disclaimer: {
         title: "Disclaimer Overview",
-        text: "Art of Neutrality are not intended to diagnose, prescribe, treat, or cure any disease, physical or mental. \n\n " +
-        "The use of Art of Neutrality by a Chinese Energetic’s practitioner should not be construed as a prescription, a promise of benefits, claims of cures, or a guarantee of results to be achieved. \n\n " +
-        "The information, instruction or advice given by a Art of Neutrality practitioner is not intended to be a substitute for competent professional medical or psychological diagnosis and care. \n\n " +
-        "You should not discontinue or modify any medication presently being taken pursuant to medical advice without obtaining approval from your healthcare professional. \n\n " +
-        "As an Art of Neutrality client, you must take complete responsibility for your own physical health and emotional well-being to participate in the class or session.",
+        text: "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
         color: "grey"
-    },
-    readmore: {
-        title: "About Us",
-        text: "Paul Wong ..."
     }
 };
 

@@ -1,22 +1,21 @@
 template(name="footer")
     footer#footer
-        footer.page-footer.cyan
+        footer.page-footer.lime.lighten-3
             #footer.container.section
                 .row
                     each footer
                         +footer_top
-                        //+footer_links
                         +footer_bottom
                         +footer_modal
                         +footer_disclaimer
 
 template(name="footer_top")
     .col.s3
-        img.img-footer.circle.responsive-img(src='#{img}', alt='#{alt}')
+        h1
+            i.mdi-maps-place
     .col.s9
         h5= title
-        p.text-lighten-4= text
-        a.waves-effect.waves-light.btn.modal-trigger(href="#footer-modal") READ MORE
+        p.text-lighten= text
 
 
 //
@@ -24,7 +23,7 @@ template(name="footer_bottom")
     .col.s12
         .footer-copyright.cyan.darken-2
             .container
-                | &copy; 2015 Art of Neutrality. &nbsp; All rights reserved. &nbsp;
+                | &copy; 2015 Per Jonsson. &nbsp; All rights reserved. &nbsp;
                 a.modal-trigger.text-lighten-3.yellow-text(href="#footer-disclaimer") Disclaimer
 
 

@@ -11,10 +11,10 @@ template(name="hero")
                     .row.center
                         br
                         br
-                        +hero_text_container
-
-                        a#download-button.btn-large.waves-effect.waves-light.lighten-1.modal-trigger.cyan(
-                        href='#hero_modal')= button
+                        unless currentUser
+                            +hero_text_container
+                            a#download-button.btn-large.waves-effect.waves-light.lighten-1.modal-trigger.cyan(
+                            href='#hero_modal')= button
                     br
                     br
             +hero_img_container

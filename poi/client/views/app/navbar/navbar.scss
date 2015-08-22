@@ -1,4 +1,4 @@
-$color_nav: #607D8B;
+$color_nav: #4dd0e1;
 
 nav {
   .brand-logo {
@@ -6,9 +6,10 @@ nav {
   }
   ul a {
     color: $color_nav;
+    font-weight: 500;
+    letter-spacing: 2px;
   }
 }
-
 
 
 #sign-out {

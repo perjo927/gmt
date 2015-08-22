@@ -1,20 +1,20 @@
 var hero = {
-    title: "Art of Neutrality",
-    subTitle: "Leading Edge Technology to Reduce Physical Pain & Stress - Energy Medicine",
-    text: "<b>Receive free Opening the Heart (OTH) energy transmissions</b>" +
+    title: "Points of Interest",
+    subTitle: "The most interesting locations in Sweden",
+    text: "<b>Register in order to add your own favorite points</b>" +
         "<br>" +
-        "Mastering Health, Emotions, Relationships and Wealth",
-    button: "GET FREE INSTANT ACCESS",
+        "It's totally free",
+    button: "SIGN UP / SIGN IN",
     modal: {
-        title: "Opening of the Heart",
-        subTitle: "Receive free Opening The Heart (OTH) energy transmissions",
-        text: "Mastering Health, Emotions, Relationships and Wealth",
-        confirmationTitle: "Thank you for subscribing!",
-        confirmationText: "You will be getting 8 Weekly Lessons which include Audios and Videos on how to do the BASICS of The Art of Neutrality (TM). Please always check your inbox.",
-        confirmationSubTitle: "Art of Neutrality (TM)",
+        title: "Sign up / Sign in",
+        subTitle: "Get your free account and start tagging",
+        text: "Add your own unique locations",
+        confirmationTitle: "",
+        confirmationText: "",
+        confirmationSubTitle: "",
         icon: "mdi-action-done"
     },
-    img: "/img/backgrounds/p2.jpg",
+    img: "/img/backgrounds/b1.jpg",
     alt: "Art of Neutrality Banner"
 };
 

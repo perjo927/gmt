@@ -15,7 +15,7 @@ var createAdminUser = function () {
 
 Meteor.startup(function () {
     createAdminUser();
-    Accounts.config({
-        forbidClientAccountCreation: true
-    });
+    //Accounts.config({
+    //    forbidClientAccountCreation: true
+    //});
 });

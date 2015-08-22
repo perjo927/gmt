@@ -6,7 +6,6 @@ Session.setDefault("externalLink", {
 
 });
 Session.setDefault("environment", "development");
-Session.setDefault("isUnlocked", false); // TODO: Remove and validate server side
 
 // TODO: Remove when released
 (function setEnvironment() {

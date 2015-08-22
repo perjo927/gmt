@@ -3,21 +3,9 @@ var navbar = {
         link: "about", //#infotainer
         text: "About"
     },
-    videos: {
-        link: "videos", // #second-banner
-        text: "Videos"
-    },
-    consultation: {
-        link: "consultation", // contact
-        text: "Consultation"
-    },
-    training: {
-        link: "training", // #third-banner
-        text: "Training"
-    },
-    experiences: {
-        link: "experiences", // #experiences
-        text: "Experiences"
+    locations: {
+        link: "locations", // #second-banner
+        text: "Locations"
     },
     eventss: {
         link: "eventss", // #fourth-banner
