@@ -1,4 +1,4 @@
-# Art of neutrality
+# Points of interest
 
 Copyright &copy; 2015 Per Jonsson
 
