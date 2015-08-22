@@ -2,7 +2,7 @@
 
 var footer = {
     title:  "About",
-    text: "Points of Interest is a service provided to you for free",
+    text: "Get Married Today is a service provided to you for free",
 
     disclaimer: {
         title: "Disclaimer Overview",

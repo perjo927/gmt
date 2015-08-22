@@ -1,29 +1,29 @@
 template(name="footer")
     footer#footer
-        footer.page-footer.lime.lighten-3
+        footer.page-footer.pink
             #footer.container.section
                 .row
                     each footer
                         +footer_top
                         +footer_bottom
-                        +footer_modal
                         +footer_disclaimer
 
 template(name="footer_top")
     .col.s3
-        h1
+        h1.white-text
             i.mdi-maps-place
     .col.s9
-        h5= title
-        p.text-lighten= text
+        .white-text
+            h5= title
+            p.text-lighten= text
 
 
 //
 template(name="footer_bottom")
     .col.s12
-        .footer-copyright.cyan.darken-2
+        .footer-copyright.pink.darken-2
             .container
-                | &copy; 2015 Per Jonsson. &nbsp; All rights reserved. &nbsp;
+                | &copy; 2015 ViPer. &nbsp; All rights reserved. &nbsp;
                 a.modal-trigger.text-lighten-3.yellow-text(href="#footer-disclaimer") Disclaimer
 
 

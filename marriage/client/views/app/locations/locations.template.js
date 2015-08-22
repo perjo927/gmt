@@ -65,8 +65,8 @@ Template.map.helpers({
     swedenMapOptions: function() {
         if (GoogleMaps.loaded()) {
             return {
-                center: new google.maps.LatLng(59.4307669, 17.9006465),
-                zoom: 5
+                center: new google.maps.LatLng(36.125, -115.175),
+                zoom: 8
             };
         }
     }

@@ -1,4 +1,4 @@
-$color_nav: #4dd0e1;
+$color_nav: white;
 
 nav {
   .brand-logo {
@@ -11,6 +11,9 @@ nav {
   }
 }
 
+.button-collapse {
+  color: white;
+}
 
 #sign-out {
   position: fixed;

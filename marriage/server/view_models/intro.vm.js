@@ -8,7 +8,7 @@ var introText1 = {
     icon: "mdi-maps-place",
     mdText: "<h5> Get married </h5>" +
         "<p class='light'>" +
-        "Find the nearest wedding coordinator" +
+        "Find the nearest wedding officiant" +
         "</p>"
 };
 

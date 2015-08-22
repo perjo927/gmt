@@ -13,7 +13,7 @@ template(name="hero")
                         br
                         unless currentUser
                             +hero_text_container
-                            a#download-button.btn-large.waves-effect.waves-light.lighten-1.modal-trigger.cyan(
+                            a#download-button.btn-large.waves-effect.waves-light.lighten-1.modal-trigger.red.darken-2(
                             href='#hero_modal')= button
                     br
                     br
@@ -27,7 +27,7 @@ template(name="hero_title_container")
 
 //
 template(name="hero_title")
-    h1.header.center.text-lighten-2.cyan-text(name="title")= title
+    h1.header.center.text-lighten-2.yellow-text(name="title")= title
 
 //
 template(name="hero_subtitle_container")
@@ -35,7 +35,7 @@ template(name="hero_subtitle_container")
 
 //
 template(name="hero_subtitle")
-    h5.header.col.s12.white-text(name="subTitle")= subTitle
+    h5.header.col.s12.pink-text(name="subTitle")= subTitle
 
 //
 template(name="hero_text_container")
@@ -43,7 +43,7 @@ template(name="hero_text_container")
 
 //
 template(name="hero_text")
-    p.white-text(name="text")
+    p.grey-text(name="text")
         +markdown
             #{text}
 

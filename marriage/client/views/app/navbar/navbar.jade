@@ -2,11 +2,11 @@
 
 template(name="navbar")
     #navbar.navbar-fixed
-        nav.red.lighten-1(role='navigation')
+        nav.pink.lighten-1(role='navigation')
             .container
                 .nav-wrapper
                     a#logo-container.brand-logo(href='#top')
-                        span.mdi-action-favcrite.white-text
+                        span.mdi-action-favorite.white-text
                         span.logo-name.white-text Get Married Today
                     a.button-collapse(href='#', data-activates='nav-mobile')
                         i.mdi-navigation-menu
@@ -26,14 +26,7 @@ template(name="navbar")
 //
 template(name="nav_container")
     each navbar
-        if Session 'editingNavbar'
-            if currentUser
-                .black-text
-                    +InputHelper(attribute=affectedProperty document=this collection="navbar"
-                    class='form-control' id=this)
-            else
-                +nav_items
-        else
+        .white-text
             +nav_items
 
 //

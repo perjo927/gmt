@@ -1,8 +1,8 @@
 template(name="appointment")
     .fixed-action-btn.action-title
-        h6.cyan-text ADD EVENT
+        h6.white-text ADD EVENT
     .fixed-action-btn.action-button
-        a.btn-floating.btn-large
+        a.btn-floating.btn-large.red.darken-2
             i.large.mdi-content-add.modal-trigger(href="#appointment_modal")
 
     +appointment_modal
@@ -12,7 +12,7 @@ template(name="appointment")
 template(name="appointment_modal")
     #appointment_modal.modal.bottom-sheet
         .modal-content.center
-            h4.cyan-text Add event
+            h4.pink-text Add event
             p Coming soon
         .modal-footer
             a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#!') Close
