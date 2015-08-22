@@ -12,7 +12,7 @@ Router.route('/', {
             "navbar": noParams,
             "hero": noParams,
             "intro": noParams,
-            "videos": noParams,
+            "locations": noParams,
             "eventss": noParams,
             "footer": noParams,
             "appointment": noParams
@@ -32,7 +32,7 @@ Router.route('/', {
                     navbar: c["navbar"].find(),
                     hero: c["hero"].find(),
                     intro: c["intro"].find(),
-                    videos: c["videos"].find(),
+                    locations: c["locations"].find(),
                     eventss: c["eventss"].find(),
                     appointment: c["appointment"].find()
                 }

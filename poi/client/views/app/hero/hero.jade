@@ -23,14 +23,7 @@ template(name="hero")
 
 //
 template(name="hero_title_container")
-    if Session 'editingHeroTitle'
-        if currentUser
-            +InputHelper(attribute="title" document=this collection="hero"
-            class='form-control' placeholder=title id=this)
-        else
-            +hero_title
-    else
-        +hero_title
+    +hero_title
 
 //
 template(name="hero_title")

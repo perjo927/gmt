@@ -7,25 +7,16 @@ template(name="intro")
                   +intro_top
             ul.scrollfire.icons
                each intro
-                  if modal
-                     +intro_bottom
-                     +intro_modal
+                  +intro_bottom
 
 //
 template(name="intro_top")
-   if Session 'editingIntroTitle'
-      if currentUser
-         +InputHelper(attribute="mdTitle" document=this collection="intro"
-         class='form-control' placeholder=mdTitle id=this)
-      else
-         +intro_title
-   else
-      +intro_title
+   +intro_title
 
 //
 template(name="intro_title")
    if mdTitle
-      h2.center.intro-text(name="mdTitle" class="{{#if currentUser}}edit{{/if}}")
+      h2.center.intro-text(name="mdTitle")
          +markdown
             #{mdTitle}
 
@@ -39,36 +30,20 @@ template(name="intro_bottom")
 
 //
 template(name="intro_icon_container")
-   if Session 'editingIntroIcon' eq=_id
-      if currentUser
-         +InputHelper(attribute="icon" document=this collection="intro"
-         class='form-control' placeholder=icon id=this)
-      else
-         +intro_icon
-   else
-      +intro_icon
+   +intro_icon
 
 template(name="intro_icon")
-   // TODO: What to do if editing an icon and it's wrongly spelled. It can be clicked because nothing will show
    if icon
-      h2.center.pink-text
-         i.intro-icon(class="#{icon} {{#if currentUser}}edit{{/if}}" name="icon")
+      h2.center.cyan-text
+         i.intro-icon(class="#{icon}" name="icon")
 
 
 //
 template(name="intro_text_container")
-   if Session 'editingIntroText' eq=_id
-      if currentUser
-         +InputHelper(attribute="mdText" document=this collection="intro"
-         class='form-control' placeholder=mdText id=this)
-      else
-         +intro_text
-   else
-      +intro_text
+   +intro_text
 
 //
 template(name="intro_text")
-   div(name="mdText" class="{{#if currentUser}}edit{{/if}}")
+   div(name="mdText")
       +markdown
          #{mdText}
-   a.modal-trigger(href="#modal-#{_id}") Read more

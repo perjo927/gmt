@@ -15,14 +15,10 @@ ContentAreas =
     [
         "hero",
         "intro",
-        "videos",
-        "consultation",
-        "training",
-        "experiences",
+        "locations",
         "eventss",
         "footer",
         "navbar",
-        "sticky",
         "appointment"
     ];
 

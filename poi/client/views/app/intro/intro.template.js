@@ -17,24 +17,3 @@ Template.intro.onRendered(function () {
 
     this.$('.modal-trigger').leanModal();
 });
-
-// TODO: Refactor the mess
-/**/
-Template.intro_top.events({
-    "keypress input": App.Template.Session.toggleAfterKeyPress("editingIntroTitle"),
-    "click .edit": App.Template.Session.setHelper("editingIntroTitle", "mdTitle", App.Template.Jquery.focus)
-});
-
-/* */
-Template.intro_text_container.events({
-    "click .edit": App.Template.Session.setHelperById("editingIntroText", App.Template.Jquery.focus),
-    "keypress input": App.Template.Session.toggleAfterKeyPress("editingIntroText")
-});
-
-/* */
-Template.intro_icon_container.events({
-    "click .edit": App.Template.Session.setHelperById("editingIntroIcon", App.Template.Jquery.focus),
-    "keypress input": App.Template.Session.toggleAfterKeyPress("editingIntroIcon")
-});
-
-

@@ -1,0 +1,3 @@
+Template.locations.onRendered(function () {
+
+});
