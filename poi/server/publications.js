@@ -7,5 +7,5 @@ ContentAreas.forEach(function (key) {
 });
 
 Meteor.publish("markers", function () {
-   return Markers.find();
+   return Markers.find({}, {limit:6 });// TODO
 });
