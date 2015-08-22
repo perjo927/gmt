@@ -1,4 +1,5 @@
 // Runs in both client and server contexts
+Markers = new Mongo.Collection('markers');
 
 ContentAreas.forEach(function (area) {
     App.collections[area] = new Mongo.Collection(area);

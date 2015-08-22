@@ -5,3 +5,7 @@ ContentAreas.forEach(function (key) {
         return App.collections[key].find();
     });
 });
+
+Meteor.publish("markers", function () {
+   return Markers.find();
+});

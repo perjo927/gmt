@@ -15,8 +15,8 @@ Router.route('/', {
             "locations": noParams,
             "eventss": noParams,
             "footer": noParams,
-            "appointment": noParams
-
+            "appointment": noParams,
+            "markers": noParams
         });
     },
     action: function(){
@@ -34,7 +34,8 @@ Router.route('/', {
                     intro: c["intro"].find(),
                     locations: c["locations"].find(),
                     eventss: c["eventss"].find(),
-                    appointment: c["appointment"].find()
+                    appointment: c["appointment"].find(),
+                    markers: Markers.find()
                 }
             }
         });

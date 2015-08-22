@@ -21,3 +21,4 @@ ContentAreas.forEach(function (key) {
     App.collections[key].allow(userAccess());
 });
 
+Markers.allow(userAccess());
