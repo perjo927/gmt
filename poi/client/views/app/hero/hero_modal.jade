@@ -22,31 +22,15 @@ template(name="hero_modal")
 
 //
 template(name="hero_modal_title_container")
-   if Session 'editingHeroModalTitle'
-      if currentUser
-         .black-text
-            +InputHelper(attribute='modal.title' document=this collection="hero"
-            class='form-control' placeholder=modal.title id=this)
-      else
-         +hero_modal_title
-   else
-      +hero_modal_title
+   +hero_modal_title
 
 //
 template(name="hero_modal_title")
-   h4.black-text(name="title" class="{{#if currentUser}}edit{{/if}}")= modal.title
+   h4.black-text(name="title")= modal.title
 
 //
 template(name="hero_modal_subtitle_container")
-   if Session 'editingHeroModalSubTitle'
-      if currentUser
-         .black-text
-            +InputHelper(attribute='modal.subTitle' document=this collection="hero"
-            class='form-control' placeholder=modal.subTitle id=this)
-      else
-         +hero_modal_subtitle
-   else
-      +hero_modal_subtitle
+   +hero_modal_subtitle
 
 //
 template(name="hero_modal_subtitle")
@@ -55,65 +39,32 @@ template(name="hero_modal_subtitle")
 
 //
 template(name="hero_modal_text_container")
-   if Session 'editingHeroModalText'
-      if currentUser
-         .black-text
-            +InputHelper(attribute='modal.text' document=this collection="hero"
-            class='form-control' placeholder=modal.text id=this)
-      else
-         +hero_modal_text
-   else
-      +hero_modal_text
+   +hero_modal_text
 
 //
 template(name="hero_modal_text")
-   p.black-text(name="modal.text" class="{{#if currentUser}}edit{{/if}}")= modal.text
+   p.black-text(name="modal.text")= modal.text
 
-// *** //
 //
 template(name="hero_modal_confirmation_title_container")
-   if Session 'editingHeroModalConfirmationTitle'
-      if currentUser
-         .black-text
-            +InputHelper(attribute='modal.confirmationTitle' document=this collection="hero"
-            class='form-control' placeholder=modal.confirmationTitle id=this)
-      else
-         +hero_modal_confirmation_title
-   else
-      +hero_modal_confirmation_title
+   +hero_modal_confirmation_title
 
 //
 template(name="hero_modal_confirmation_title")
-   h2.black-text(name="modal.confirmationTitle" class="{{#if currentUser}}edit{{/if}}")= modal.confirmationTitle
+   h2.black-text(name="modal.confirmationTitle")= modal.confirmationTitle
 
 
 //
 template(name="hero_modal_confirmation_subtitle_container")
-   if Session 'editingHeroModalConfirmationSubTitle'
-      if currentUser
-         .black-text
-            +InputHelper(attribute='modal.confirmationSubTitle' document=this collection="hero"
-            class='form-control' placeholder=modal.confirmationSubTitle id=this)
-      else
-         +hero_modal_confirmation_subtitle
-   else
-      +hero_modal_confirmation_subtitle
+   +hero_modal_confirmation_subtitle
 
 //
 template(name="hero_modal_confirmation_subtitle")
-   p.black-text(name="modal.confirmationSubTitle" class="{{#if currentUser}}edit{{/if}}")= modal.confirmationSubTitle
+   p.black-text(name="modal.confirmationSubTitle")= modal.confirmationSubTitle
 
 //
 template(name="hero_modal_confirmation_text_container")
-   if Session 'editingHeroModalConfirmationText'
-      if currentUser
-         .black-text
-            +InputHelper(attribute='modal.confirmationText' document=this collection="hero"
-            class='form-control' placeholder=modal.confirmationText id=this)
-      else
-         +hero_modal_confirmation_text
-   else
-      +hero_modal_confirmation_text
+   +hero_modal_confirmation_text
 
 //
 template(name="hero_modal_confirmation_text")

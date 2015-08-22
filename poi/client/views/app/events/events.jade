@@ -20,37 +20,27 @@ template(name="events_action_button")
             i.mdi-content-add Add
 //
 template(name="events_remove_button")
-    if currentUser
+    // TODO:
+    //if currentUser
         i.remove-item.mdi-action-highlight-remove.left
 
 //
 template(name="events_icon_container")
-    if Session 'editingEventsIcon'
-        if currentUser
-            +InputHelper(attribute="icon" document=this collection="eventss"
-            class='form-control' placeholder=icon id=this)
-        else
-            +events_icon
-    else
-        +events_icon
+    +events_icon
 
 //
 template(name="events_icon")
-    i.pink-text(class="#{icon} medium {{#if currentUser}}edit{{/if}}" name="icon" )
+    i.cyan-text(class="#{icon} medium" name="icon" )
 
 //
 template(name="events_main_title_container")
-    if Session 'editingEventsMainTitle'
-        if currentUser
-            +InputHelper(attribute="title" document=this collection="eventss"
-            class='form-control' placeholder=title id=this)
-        else
-            +events_main_title
-    else
-        +events_main_title
+    +events_main_title
+
 //
 template(name="events_main_title")
-    h4.pink-text(name="title" class="{{#if currentUser}}edit{{/if}}")= title
+    h4.cyan-text(name="title")= title
+    h5
+        i.pink-text Coming soon!
 
 // *** //
 template(name="events_bottom")
@@ -76,35 +66,21 @@ template(name="events_bottom")
 
 //
 template(name="events_title_container")
-    if Session 'editingEventsTitle' eq=_id
-        if currentUser
-            +InputHelper(attribute="title" document=this collection="eventss"
-            class='form-control' placeholder=title id=this)
-        else
-            +events_title
-    else
-        +events_title
+    +events_title
 
 //
 template(name="events_title")
     span.purple-text.mdi-action-event.medium
     span.black-text
-        b(name="title" class="{{#if currentUser}}edit{{/if}}")= title
+        b(name="title")= title
 
 
 //
 template(name="events_location_container")
-    if Session 'editingEventsLocation' eq=_id
-        if currentUser
-            +InputHelper(attribute="location" document=this collection="eventss"
-            class='form-control' placeholder=location id=this)
-        else
-            +events_location
-    else
-        +events_location
+    +events_location
 
 //
 template(name="events_location")
     b.black-text.light Location: &nbsp;
-    span(name="location" class="{{#if currentUser}}edit{{/if}}")= location
+    span(name="location")= location
 

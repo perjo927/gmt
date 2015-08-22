@@ -1,9 +1,9 @@
 template(name="locations")
     each locations
-        .section
-            #locations.container.section.scrollspy
-                .row.center
-                    +locations_title_container
+        #locations.section
+            .row.center
+                +locations_title_container
+                +map
 
 
 //
@@ -12,5 +12,9 @@ template(name="locations_title_container")
 
 //
 template(name="locations_title")
-    h5.header.col.s12.pink(name="title")!= title
+    h2.header.col.s12.lime.lighten-4.cyan-text(name="title")!= title
 
+//
+template(name="map")
+    .map-container
+        +googleMap(name="swedenMap" options=swedenMapOptions)

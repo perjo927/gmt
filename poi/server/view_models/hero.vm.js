@@ -1,6 +1,6 @@
 var hero = {
     title: "Points of Interest",
-    subTitle: "The most interesting locations in Sweden",
+    subTitle: "The most interesting and exciting locations in Sweden",
     text: "<b>Register in order to add your own favorite points</b>" +
         "<br>" +
         "It's totally free",

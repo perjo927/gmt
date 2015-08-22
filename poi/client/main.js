@@ -13,4 +13,8 @@ UI.body.rendered = function() {
 
 };
 
+Meteor.startup(function() {
+    GoogleMaps.load();
+});
+
 Session.setDefault("environment", "development");

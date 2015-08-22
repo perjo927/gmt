@@ -1,6 +1,4 @@
-var thisViewName = "appointment";
-
-Template[thisViewName].onRendered(function () {
+Template.appointment.onRendered(function () {
     this.$('.modal-trigger').leanModal({
         dismissible: true, // Modal can be dismissed by clicking outside of the modal
         opacity: 0.05, // Opacity of modal background
@@ -9,14 +7,5 @@ Template[thisViewName].onRendered(function () {
         //ready: function() { alert('Ready'); }, // Callback for Modal open
         //complete: function() { alert('Closed'); } // Callback for Modal close
     });
-    this.$('.tooltipped').tooltip();
 });
 
-/* */
-Template[thisViewName].helpers({
-});
-
-/* */
-Template[thisViewName].events({
-
-});
