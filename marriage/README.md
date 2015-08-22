@@ -1,6 +1,6 @@
-# Points of interest
+# Get married today
 
-Copyright &copy; 2015 Per Jonsson
+Copyright &copy; 2015 ViPer
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
